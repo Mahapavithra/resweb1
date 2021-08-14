@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rosybrown;
+    
+    
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    float: right;
+    margin-top: 22px;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  button{
+      margin-right: 0;
+      margin-top: 10px;
+  }
+  .top{
+      background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)),url("bg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 70vh;
+      width: 100%;
+  }
+  
+  .cont{
+    font-family: 'Lora', serif;
+  }
+.cont .card:hover{
+animation: shake 3s ease-in;
+cursor: pointer;
+} 
+@keyframes shake {
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+  h1,h4,p,i,a,button{
+    
+  animation: fadeInBottom  3s ease-in;
+  }
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  .logo{
+      background-color: none;
+      margin-top: 10px;
+  }
+  .top1{
+      color: #f1f1f1;
+      text-align: center;
+      margin-top: 12%;
+  }
+  .top1 h1{
+      font-size: 40px;
+      font-weight: 500;
+      letter-spacing: 2px;
+  }
+  .top1 p{
+      letter-spacing: 2px;
+      font-size: 20px;
+      margin-top: 20px;
+  }
+  .top a{
+      color: #f1f1f1;
+      font-size: 15px;
+      padding-left: 17px;
+      text-decoration: none;
+  }
+  @media screen and (max-width: 900px){
+      .top a{
+          font-size: 12px;
+      }
+      .main{
+          display: block;
+      }
+  }
+  @media screen and (max-width: 800px){
+      .top a{
+          display: none;
+      }
+      .sidebar a{
+        display: block;
+      }
+      .top1 h1{
+          font-size: 35px;
+      }
+      .bottom form{
+        margin-right:0 ;
+      }
+  }
+  @media screen and (max-width: 600px){
+      .top1 h1{
+        font-size: 25px;
+        letter-spacing: 0px;
+      }
+      .top1 p{
+          font-size: 15px;
+          margin-top: 30px;
+      }
+      .top1{
+          margin-top: 30%;
+      }
+      .crads3 img{
+        height: 200px;
+      }
+    }
+    .main1{
+        background-image: url("flower.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 400px;
+        width: 100%;
+    }
+    .cont .card-group{
+        margin-top: 2%;
+
+    }
+   .animage{
+       background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url("food3.jpg");
+       background-position: center;
+       background-size: cover;
+       background-attachment: fixed;
+       height: 70vh;
+       width: 100%;
+       margin-top: 17%;
+       
+  animation: drive 10s ease-in infinite;
+   }
+   @keyframes drive{
+    0%{
+      transform: translateX(-500px);
+    }
+    100%{
+      transform: translateX(100vw);
+    }
+  }
+.checked {
+  color: orange;
+  text-align: center;
+  margin-top: 2%;
+}
+   .carousel{
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("sw3.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .carousel-inner{
+    height: 400px;
+  }
+  .carousel-caption{
+    color: #fff;
+    top:10%;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .bottom{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("footbg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+
+  }
+  .restime .btn{
+    background-color: goldenrod;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+  .restime button:hover{
+    background-color: transparent;
+    color: burlywood;
+  }
+  .restime .form-control{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid salmon  ;
+  }
+  
+  .restime .fa-asterisk{
+    font-size: 7px;
+    color: salmon;
+  }
+  label{
+    font-size: 20px;
+  }
+  @keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
+}
+.top a:hover{
+  border-bottom: 2px solid white;
+  border-top:  2px solid white;
+  color: white;
+  font-weight: bolder;
+}
